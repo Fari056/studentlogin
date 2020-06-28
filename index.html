@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+    <table id="table">
+        <th>
+            <td colspan="6" align="center"><h1>Student Account Registration</h1></td>
+        </th>
+        <tr>
+            <td>First Name</td>
+            <td><input class="input" id="firstName" type="text"></td>
+            <td>Middle Name</td>
+            <td><input class="input" id="middleName" type="text"></td>
+            <td>Last Name</td>
+            <td><input class="input" id="lastName" type="text" required></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td colspan="2"><input class="input" id="email" type="email" placeholder="exaple@uaar.pk"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td colspan="2">
+                <input class="radio" type="radio" name="select" value="male"checked>
+                <label for="radio">Male</label>
+                <input class="radio" type="radio" name="select" value="female">
+                <label for="radio">Female</label>
+            </td>
+            <td rowspan="5"><img src="images/male.png" id="image" height="180px" width="180px"></td>
+        </tr>
+        <tr>
+            <td>CNIC</td>
+            <td colspan="2"><input class="input" type="text" placeholder="eg:12345-123456789-0"></td>
+            
+        </tr>
+        <tr>
+            <td>Phone No.</td>
+            <td colspan="2"><input class="input" type="number" placeholder="eg:923*********"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td colspan="2" class="success"><input class="input" id="password" type="password">
+            <small>Error message</small>
+            </td>
+        </tr>
+        <tr>
+            <td>Re-enter <br>Password</td>
+            <td colspan="2" class="success"><input class="input" id="password2" type="password">
+                <small>Error message</small>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" align="center">
+                <button type="reset" class="reset">Rest</button>
+                <button class="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
